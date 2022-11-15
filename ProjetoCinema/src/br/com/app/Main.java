@@ -36,7 +36,7 @@ public class Main {
 
 		// SET FILME 2 (4)
 		Filme filme2 = new Filme();
-		filme2.setNome("Nope (Não! Não Olhe!)");
+		filme2.setNome("Nope (NÃ£o! NÃ£o Olhe!)");
 		filme2.setAno(2022);
 		filme2.setDuracao(158.0);
 		filme2.setNomeDiretor(clienteDiretor);
@@ -59,7 +59,7 @@ public class Main {
 
 		System.out.println("\n");
 
-		System.out.println("=> AGORA EH HORA DE VOCÊ COMPRAR O SEU INGRESSO");
+		System.out.println("=> AGORA EH HORA DE VOCÃŠ COMPRAR O SEU INGRESSO");
 
 		// SEUS DADOS
 		System.out.println("DIGITE SEU CPF \n");
@@ -82,9 +82,9 @@ public class Main {
 		voce_user.setQuantidade_transacoes(qtd_transacoes);
 		voce_user.setValor_total_gasto(qtd_transacoes * 20.0); // considerando que um ingresso eh 20,
 
-		// ESCOLHA SUA SEÇÃO E CADEIRA
+		// ESCOLHA SUA SEÃ‡ÃƒO E CADEIRA
 
-		System.out.println("DIGITE O NÚMERO DA SALA DO FILME \n");
+		System.out.println("DIGITE O NÃšMERO DA SALA DO FILME \n");
 		Integer n_sala = scanner.nextInt();
 
 		System.out.println("DIGITE A CADEIRA ESCOLHIDA \n");
@@ -103,9 +103,9 @@ public class Main {
 
 	public static void monstrar_comprovante_ingresso(Ingresso ingresso) {
 		System.out.println("======= COMPROVANTE DE PAGAMENTO INGRESSO =======\n");
-		System.out.println("     Parabéns pela a compra "+ingresso.getNomeCliente()+". Tenha um bom Filme!\n");
+		System.out.println("     ParabÃ©ns pela a compra "+ingresso.getNomeCliente()+". Tenha um bom Filme!\n");
 		System.out.println("     " + ingresso.getFilme() + " 2D DUBLADO");
-		System.out.println("     SALA: " + ingresso.getSala() + " | CADEIRA: " + ingresso.getSala() + "\n");
+		System.out.println("     SALA: " + ingresso.getSala() + " | CADEIRA: " + ingresso.getCadeira + "\n");
 		System.out.println(
 				"     PAGAMENTO: " + ingresso.getStatusPagamento() + " | VALOR: " + ingresso.getPreco() + "\n");
 		System.out.println("======= Petrolina - " + ingresso.getCinema() + " - " + ingresso.getData() + " =======");
